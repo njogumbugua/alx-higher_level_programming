@@ -1,8 +1,9 @@
 #!/usr/bin/python3
 if __name__ == "__main__":
-    import sys, math
+    import sys
 
     result = 0
-    for i in sys.argv:
+    arguments = sys.argv[1:]
+    for i in arguments:
         result += int(i)
         print("{}".format(result))
